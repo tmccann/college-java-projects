@@ -40,6 +40,12 @@ public class Types {
 	        // (note the capital S - String is a class, not a primitive type
 	        // like the others above it)
 	        String name = "Tommy";
+	        
+	        // Regular variable - can be reassigned, camelCase naming
+	        int studentAge = 30;
+	        
+	        // Constant - cannot be reassigned once set, SCREAMING_SNAKE_CASE naming
+	        final int MAX_AGE = 100; 
 
 	        // ===== PRINT THEM ALL OUT =====
 	        // Java automatically converts each value to text when you
@@ -51,6 +57,8 @@ public class Types {
 	        System.out.println("char: " + grade);
 	        System.out.println("boolean: " + isStudent);
 	        System.out.println("String: " + name);
+	        System.out.println("Regular Variable: " + studentAge);
+	        System.out.println("Constant: " + MAX_AGE);
 	    }
 }
 
