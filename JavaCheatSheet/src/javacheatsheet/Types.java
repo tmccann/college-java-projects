@@ -3,6 +3,15 @@ package javacheatsheet;
 public class Types {
 	  public static void runExamples() {
 
+	        // ===== VARIABLES =====
+		  
+		  
+		  	// Regular variable - can be reassigned, camelCase naming
+	        int studentAge = 30;
+	        
+	        // Constant - cannot be reassigned once set, SCREAMING_SNAKE_CASE naming
+	        final int MAX_AGE = 100; 
+
 	        // ===== WHOLE NUMBERS =====
 
 	        // int: the default whole-number type, fine for most everyday values
@@ -12,7 +21,11 @@ public class Types {
 	        // needs an 'L' on the end - without it, Java assumes you mean int,
 	        // and this number is too big to be an int, so it won't compile
 	        long population = 8000000000L;
-
+	        
+	        // byte: smallest whole-number type (-128 to 127)
+		    // rarely used day-to-day, mostly for saving memory with large amounts of data
+		    byte smallNumber = 100;
+		        
 	        // ===== DECIMAL NUMBERS =====
 
 	        // double: the default decimal type in Java (used automatically
@@ -23,6 +36,10 @@ public class Types {
 	        // needs an 'f' on the end - without it, Java assumes you mean
 	        // double, and won't let you squeeze a double into a float
 	        float temperature = 36.6f;
+	        
+	        // short: bigger than byte, smaller than int (-32,768 to 32,767)
+	        // like byte, not commonly used unless memory really matters
+	        short mediumNumber = 30000;
 
 	        // ===== SINGLE CHARACTER =====
 
@@ -41,24 +58,24 @@ public class Types {
 	        // like the others above it)
 	        String name = "Tommy";
 	        
-	        // Regular variable - can be reassigned, camelCase naming
-	        int studentAge = 30;
 	        
-	        // Constant - cannot be reassigned once set, SCREAMING_SNAKE_CASE naming
-	        final int MAX_AGE = 100; 
-
+	        
 	        // ===== PRINT THEM ALL OUT =====
 	        // Java automatically converts each value to text when you
 	        // join it with a String using +
 	        System.out.println("int: " + age);
 	        System.out.println("long: " + population);
+	        System.out.println("byte: " + smallNumber);
 	        System.out.println("double: " + price);
 	        System.out.println("float: " + temperature);
+	        System.out.println("short: " + mediumNumber);
 	        System.out.println("char: " + grade);
 	        System.out.println("boolean: " + isStudent);
 	        System.out.println("String: " + name);
 	        System.out.println("Regular Variable: " + studentAge);
 	        System.out.println("Constant: " + MAX_AGE);
+	        
+	        
 	    }
 }
 
