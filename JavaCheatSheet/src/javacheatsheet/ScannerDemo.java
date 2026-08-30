@@ -6,7 +6,7 @@ import java.util.Scanner;
 
 public class ScannerDemo {
 //	user inputs there user name
-	public static String greetUser() {
+	public static void greetUser() {
 		//create input object
 		Scanner myObj = new Scanner(System.in);
 		//ask user for first and surName 
