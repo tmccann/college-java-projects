@@ -1,5 +1,7 @@
 package javacheatsheet;
 
+import java.lang.foreign.SymbolLookup;
+
 public class Types {
 	  public static void runExamples() {
 
@@ -75,7 +77,7 @@ public class Types {
 	        System.out.println("Regular Variable: " + studentAge);
 	        System.out.println("Constant: " + MAX_AGE);
 	        
-	        
+	       
 	    }
 }
 
