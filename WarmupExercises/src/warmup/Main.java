@@ -8,7 +8,8 @@ public class Main {
 		int upper = 10;
 //		OddEven.printNumbers(lower,upper);
 //		SumOfOddAndEven.oddEvenSum(lower, upper);
-		DivisableBySeven.calculateResults();
+//		DivisableBySeven.calculateResults();
+		SumofSquares.result();
 		
 	}
 
