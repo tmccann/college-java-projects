@@ -39,8 +39,10 @@ public class Main {
 	    // ConditionalsDemo.switchExpression();
 
 	    // ===== SCANNER =====
-	    String name = ScannerDemo.greetUser();
-	    ScannerDemo.welcomeMsg(name);
+	    //String name = ScannerDemo.greetUser();
+	    //ScannerDemo.welcomeMsg(name);
+		// ===== FORMATTING OUTPUT =======
+		FormattingOutput.examples();
 	}
 
 }
