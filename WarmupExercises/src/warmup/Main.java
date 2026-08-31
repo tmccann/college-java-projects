@@ -9,7 +9,8 @@ public class Main {
 //		OddEven.printNumbers(lower,upper);
 //		SumOfOddAndEven.oddEvenSum(lower, upper);
 //		DivisableBySeven.calculateResults();
-		SumofSquares.result();
+//		SumofSquares.result();
+		GravityMoonVEarth.result();
 		
 	}
 
