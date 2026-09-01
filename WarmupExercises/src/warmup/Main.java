@@ -10,8 +10,8 @@ public class Main {
 //		SumOfOddAndEven.oddEvenSum(lower, upper);
 //		DivisableBySeven.calculateResults();
 //		SumofSquares.result();
-		GravityMoonVEarth.result();
-		
+//		GravityMoonVEarth.result();
+		GetPattern.getPatternResulr();
 	}
 
 }

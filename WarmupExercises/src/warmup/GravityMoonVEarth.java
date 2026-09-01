@@ -21,7 +21,7 @@ public class GravityMoonVEarth {
 		// f = floating-point (float/double); precision goes BEFORE f, e.g. .2f = 2 decimal places
 		// s = string		
 		//display header
-		System.out.printf("%8s%3s%8s", "Earth", "|" , "Moon");
+		System.out.printf("%8s%3s%8s%n", "Earth", "|" , "Moon");
 		//For loop to iterate from min to max value
 		for(int earthWeight = minValue; earthWeight <=maxValue; earthWeight++) {
 		
