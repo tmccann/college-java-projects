@@ -12,7 +12,8 @@ public class ScannerDemo {
 		//ask user for first and surName 
 		String inputMessage = "please eneter your full name (eg Joe Bloggs): ";
 		System.out.println(inputMessage);
-		//read what user typed and store as userName			String usersNames = myObj.nextLine();	
+		//read what user typed and store as userName			
+		String usersNames = myObj.nextLine();	
 				
 	}
 
