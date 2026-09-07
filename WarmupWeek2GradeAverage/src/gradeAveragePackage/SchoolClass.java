@@ -51,11 +51,11 @@ public class SchoolClass {
 				//else 
 			}else {
 				//if current score under min score set to current value
-				if(minScore < currentValue) {
+				if(currentValue < minScore) {
 					minScore = currentValue;
 				}
 				// if current score over max score set to current value
-				if(maxScore > currentValue) {
+				if(currentValue > maxScore) {
 					maxScore = currentValue;
 				}
 				
@@ -74,7 +74,7 @@ public class SchoolClass {
 		//output minScore
 		System.out.println("The minimum is " + minScore);
 		//output maxScore
-		System.out.println("the maximum is" + maxScore);
+		System.out.println("the maximum is " + maxScore);
 	}
 
 
