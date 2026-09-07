@@ -5,7 +5,7 @@ import java.util.Random;
 public class Dice {
 		
 	//class wide variable
-	int roll;
+	int rollResult;
 	
 	public Dice(int size) {
 		//set dice size
@@ -15,13 +15,13 @@ public class Dice {
 		Random r= new Random();	
 		
 		//generate random number that matches dice size	        
-		 roll = r.nextInt(diceSize) + 1;
+		 rollResult = r.nextInt(diceSize) + 1;
 	}
 	
 	public int getRollResut() {
 		
 		//return roll value
-		return roll;
+		return rollResult;
        
 	}
 }
