@@ -6,6 +6,9 @@ public class Main {
 		
 		// create instance of GameController 
 		GameController game1 = new GameController();
+		
+		//dice toString method has been included in controller  uncomment if required 
+		//System.out.println(game1);
 	}
 
 }
