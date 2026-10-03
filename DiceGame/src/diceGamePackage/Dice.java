@@ -7,15 +7,17 @@ public class Dice {
 	//class wide variable
 	int rollResult;
 	
-	public Dice() {
+	Random r;
 	
+	public Dice() {
+		
 		
 		
 	}
 	
-	public int getRollResut() {
+	public int rollDice() {
 		// Creating the instance of Random class
-		Random r= new Random();	
+		r= new Random();	
 		
 		//generate random number that matches dice size	        
 		rollResult = r.nextInt(6) + 1;
@@ -25,7 +27,7 @@ public class Dice {
 	}
 	
 	public String toString() {
-	//return information of what is held in dice object
-	return "Roll Result is " + rollResult;
+	//return objects attributes 
+		return "Roll Result is " + rollResult;
 	}
 }

@@ -5,10 +5,11 @@ public class Main {
 	public static void main(String[] args) {
 		
 		// create instance of GameController 
-		GameController game1 = new GameController();
+		GameController playgames = new GameController();
 		
-		//dice toString method has been included in controller  uncomment if required 
-		//System.out.println(game1);
+		//start game controller 
+		playgames.start();
+	
 	}
 
 }
