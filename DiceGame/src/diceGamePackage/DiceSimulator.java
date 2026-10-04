@@ -12,7 +12,7 @@ public class DiceSimulator {
 	//roll result
 	private int rollResult;
 	//random 
-	private Random r;
+	private Random random;
 	
 	public DiceSimulator() {
 		
@@ -21,7 +21,7 @@ public class DiceSimulator {
 		//create instance of rolls array
 		rollsArray = new int[20];
 		//create instance of random class
-		r= new Random();
+		random= new Random();
 		
 		}
 		

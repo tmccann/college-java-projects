@@ -7,7 +7,7 @@ public class Dice {
 	//class wide variable
 	int rollResult;
 	
-	Random r;
+	Random random;
 	
 	public Dice() {
 		
@@ -17,10 +17,10 @@ public class Dice {
 	
 	public int rollDice() {
 		// Creating the instance of Random class
-		r= new Random();	
+		random= new Random();	
 		
 		//generate random number that matches dice size	        
-		rollResult = r.nextInt(6) + 1;
+		rollResult = random.nextInt(6) + 1;
 		//return roll value
 		return rollResult;
        
