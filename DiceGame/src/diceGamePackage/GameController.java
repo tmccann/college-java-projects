@@ -8,11 +8,20 @@ public class GameController {
 	private String userName;
 	//scanner object to get user input 
 	private Scanner userInput;
+	//create menu
+	private Menu menu;
 	//Create Simulator
 	private DiceSimulator simulator;
+	//Create rollASix
+	private RollASix rollASix;
+	
+	
 	public GameController() {
+		
 		userInput = new Scanner(System.in);
+		menu = new Menu(userInput);
 		simulator = new DiceSimulator();
+		rollASix = new RollASix();
 		
 	}
 	
@@ -23,7 +32,8 @@ public class GameController {
 	public void start() {
 		displayWelcomeMessage();
 		enterUserName();
-		startDiceSimulator();
+		int selected = startMenu();
+		playSelectedGame(selected);
 		}
 	
 	//display welcome message
@@ -41,13 +51,31 @@ public class GameController {
 		userName= userInput.nextLine();
 	}
 	
-	//start dice simulator 
-	private void startDiceSimulator() {
-		simulator = new DiceSimulator();
-		simulator.playSimulator(userName);
+	//start Menu 
+	private int startMenu() {
+		return menu.startMenu();
 		
 	}	
 	
+	//play selected game
+	private void playSelectedGame (int selected) {
+		
+		//use switch to select game 
+		switch(selected) {
+		
+		case 1:
+			simulator.playSimulator(userName);
+			break;
+		
+		case 2:
+			rollASix.playRollaSix(userName);
+			break;
+		
+		default:
+			System.out.println("invalid choice");
+		}
+		
+	}
 	
 	//returns current state of the object for testing and debugging 
 	public String toString() {
@@ -56,7 +84,7 @@ public class GameController {
 		return "Username:" + userName;
 	} 
 	
-	}
+}
 	
 
 
