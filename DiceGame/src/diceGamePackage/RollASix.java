@@ -2,7 +2,7 @@ package diceGamePackage;
 
 public class RollASix {
 	
-	//global variable
+	//class wide variables
 	int score;
 	Dice dice;
 

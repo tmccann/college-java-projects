@@ -33,6 +33,7 @@ public class Menu {
 		System.out.println("======================================");
 		System.out.println(" 1. Dice Simulator                    ");
 		System.out.println(" 2. Roll a Six                        ");
+		System.out.println(" 3. Roll a Double                        ");
 		System.out.println("--------------------------------------");
 		
 

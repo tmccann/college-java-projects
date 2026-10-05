@@ -14,6 +14,8 @@ public class GameController {
 	private DiceSimulator simulator;
 	//Create rollASix
 	private RollASix rollASix;
+	//Create rollADouble
+	private RollADouble rollADouble;
 	
 	
 	public GameController() {
@@ -22,7 +24,7 @@ public class GameController {
 		menu = new Menu(userInput);
 		simulator = new DiceSimulator();
 		rollASix = new RollASix();
-		
+		rollADouble = new RollADouble();
 	}
 	
 	
@@ -70,7 +72,11 @@ public class GameController {
 		case 2:
 			rollASix.playRollaSix(userName);
 			break;
-		
+			
+		case 3:
+			rollADouble.playRollADouble(userName);
+			break;
+			
 		default:
 			System.out.println("invalid choice");
 		}
