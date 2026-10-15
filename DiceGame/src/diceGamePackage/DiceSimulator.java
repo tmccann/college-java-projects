@@ -27,7 +27,8 @@ public class DiceSimulator {
 			rollTwentyTimes();
 			//display end message
 			displayGameEndMessage(userName);
-
+			//TEST un-comment to show what the controller holds
+//			System.out.println(dice.toString());
 	}
 		
 	//method to repeat roll 20 times and store each result in array

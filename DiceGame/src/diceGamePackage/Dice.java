@@ -1,13 +1,29 @@
 package diceGamePackage;
 
-public class Dice {
+import java.util.Random;
 
+public class Dice {
+	//class wide variable
+	//random 
+	private Random random;
+	//roll result
+	private int rollResult;
+	
 	public Dice () {
-		
+		random = new Random();
 	}
 	
-	//place holder 
+	//Roll dice and return result
 	public int rollDice () {
-		return 3;
+		
+		//generate random number nextInt gives result of 0 - 5 so add 1 for 1-6
+		rollResult = random.nextInt(6) + 1;
+		//return rollResult
+		return rollResult;
+	}
+	
+	//provides a summary of what GameController object holds
+	public String toString() {
+		return "Roll Result: " + rollResult;
 	}
 }
