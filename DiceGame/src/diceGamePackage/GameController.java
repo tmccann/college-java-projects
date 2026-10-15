@@ -25,7 +25,8 @@ public class GameController {
 			getUserName();
 			//call dice simulator passing user name
 			simulator.playDiceSimulator(userName);
-			
+			//TEST un-comment to show what the controller holds
+//			System.out.println(simulator.toString()); 
 		}
 		
 		//private method to display welcome message 
@@ -44,6 +45,11 @@ public class GameController {
 			userName = userInput.nextLine();	
 		}
 		
+		//provides a summary of what GameController object holds
+		public String toString() {
+			//return userNamwe
+			return "userName: " + userName;
+		}
 		
 }
 

@@ -9,6 +9,10 @@ public class Main {
 		
 		//start new session
 		playGames.startSession();
+		
+		//TEST un-comment to show what the controller holds
+//		System.out.println(playGames.toString());
 		}
-
+	
+	
 }
