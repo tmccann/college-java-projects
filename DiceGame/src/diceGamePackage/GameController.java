@@ -4,17 +4,26 @@ import java.util.Scanner;
 
 public class GameController {
 	//class wide variable
+		//menu
+		private Menu menu;
 		//Dice simulator game
 		private DiceSimulator simulator;
+		//roll a six
+		private RollASix rollASix;
 		//read users input
 		private Scanner userInput;
 		//store users input
 		private String userName;
+		//choice
+		private int choice;
 		
 		public GameController() {
 			//create new instances of scanner and dice simulator
 			userInput = new Scanner(System.in);
 			simulator = new DiceSimulator();
+			//create instance of menu and  RollASix
+			menu = new Menu();
+			rollASix = new RollASix();
 		}
 		
 		//public method to play dice simulator
@@ -23,8 +32,9 @@ public class GameController {
 			displayWelcomeMessage();
 			//call get user name 
 			getUserName();
-			//call dice simulator passing user name
-			simulator.playDiceSimulator(userName);
+			//ask menu for players choice 
+			choice = menu.selectGame();
+			System.out.println(choice);
 			//TEST un-comment to show what the controller holds
 //			System.out.println(simulator.toString()); 
 		}
