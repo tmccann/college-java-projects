@@ -34,7 +34,7 @@ public class GameController {
 			getUserName();
 			//ask menu for players choice 
 			choice = menu.selectGame();
-			System.out.println(choice);
+			playSelectedGame();
 			//TEST un-comment to show what the controller holds
 //			System.out.println(simulator.toString()); 
 		}
@@ -55,6 +55,25 @@ public class GameController {
 			userName = userInput.nextLine();	
 		}
 		
+		
+		//private method to select game
+		private void playSelectedGame () {
+			switch(choice) {
+			
+			//case one play diceSimulator
+			case 1:
+				simulator.playDiceSimulator(userName);
+				break;
+			//case 2 play rollASix
+			case 2:
+				rollASix.playRollASix();
+				break;
+			//default message if invalid choice
+			default:
+				System.out.println("invalid choice please start over");
+				break;
+			}
+		}
 		//provides a summary of what GameController object holds
 		public String toString() {
 			//return userNamwe
