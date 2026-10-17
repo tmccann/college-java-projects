@@ -24,11 +24,14 @@ public class RollASix {
 	public void playRollASix() {
 		//reset score to 5
 		score = 5;
+		//clear array list 
+		rollResult.clear();
 		//display header
 		displayHeader();
 		//tryRoll a six
-		tryRollASix();
+		playRounds();
 		//display win  loose message
+		displayEndGameMessage();
 	}
 	
 	//Display header method
@@ -38,7 +41,7 @@ public class RollASix {
 		System.out.println("    1           5    ");
 	}
 	
-	private void tryRollASix() {
+	private void playRounds() {
 		//roll dice and get value
 		int currentRoll = 0;
 		//while loop while score 0 and roll result not 6 		
@@ -46,15 +49,27 @@ public class RollASix {
 			//roll dice
 			currentRoll = dice.rollDice();
 			//if roll is not 6 -1 from score
-			if(score != 6) {
+			if(currentRoll != 6) {
 				score--;
 			}
 			//add current roll to array
 			rollResult.add(currentRoll);
 			//display current roll value and score 
 			System.out.println("    " + currentRoll + "           " + score);
-		
+		}		
+	}
+	
+	private void displayEndGameMessage() {
+		//insert blank line for display format
+		System.out.println("");
+		//if score over 0 display winning message and score
+		if(score > 0) {
+			
+			System.out.println("You win! Your score is " + score + ".");
 		}
-		
+		//else display loser message
+		else {
+			System.out.println("Youn Lose!");
+		}
 	}
 }
