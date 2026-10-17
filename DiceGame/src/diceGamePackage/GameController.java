@@ -22,7 +22,7 @@ public class GameController {
 			userInput = new Scanner(System.in);
 			simulator = new DiceSimulator();
 			//create instance of menu and  RollASix
-			menu = new Menu();
+			menu = new Menu(userInput);
 			rollASix = new RollASix();
 		}
 		
