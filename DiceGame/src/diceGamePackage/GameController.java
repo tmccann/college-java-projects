@@ -10,6 +10,8 @@ public class GameController {
 		private DiceSimulator simulator;
 		//roll a six
 		private RollASix rollASix;
+		//roll a double
+		private RollADouble rollADouble;
 		//read users input
 		private Scanner userInput;
 		//store users input
@@ -21,9 +23,12 @@ public class GameController {
 			//create new instances of scanner and dice simulator
 			userInput = new Scanner(System.in);
 			simulator = new DiceSimulator();
-			//create instance of menu and  RollASix
+			//create instance of menu 
 			menu = new Menu(userInput);
+			//create instance of roll a six
 			rollASix = new RollASix();
+			//create instance of roll a double
+			rollADouble = new RollADouble();
 		}
 		
 		//public method to play dice simulator
@@ -68,6 +73,10 @@ public class GameController {
 			//case 2 play rollASix
 			case 2:
 				rollASix.playRollASix();
+				break;
+			//case 3 play rollADouble
+			case 3:
+				rollADouble.playRollADouble();
 				break;
 			//default message if invalid choice
 			default:
