@@ -22,7 +22,7 @@ public class Dice {
 		return rollResult;
 	}
 	
-	//provides a summary of what GameController object holds
+	//provides a summary of what dice object holds
 	public String toString() {
 		return "Roll Result: " + rollResult;
 	}

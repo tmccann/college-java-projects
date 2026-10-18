@@ -37,6 +37,7 @@ public class GameController {
 			playSelectedGame();
 			//TEST un-comment to show what the controller holds
 //			System.out.println(simulator.toString()); 
+//			System.out.println(rollASix.toString());
 		}
 		
 		//private method to display welcome message 
@@ -76,8 +77,8 @@ public class GameController {
 		}
 		//provides a summary of what GameController object holds
 		public String toString() {
-			//return userNamwe
-			return "userName: " + userName;
+			//return userName and choices
+			return "userName: " + userName + "\n" + "choice: " + choice;
 		}
 		
 }

@@ -1,6 +1,7 @@
 package diceGamePackage;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 
 
 public class RollASix {
@@ -32,6 +33,8 @@ public class RollASix {
 		playRounds();
 		//display win  loose message
 		displayEndGameMessage();
+		//TEST un-comment to show what RollaSix holds
+		rollResult.toString();
 	}
 	
 	//Display header method
@@ -71,5 +74,10 @@ public class RollASix {
 		else {
 			System.out.println("Youn Lose!");
 		}
+	}
+	
+	//provides a summary of what RollASix object holds.
+	public String toString() {
+		return "Roll results: " + rollResult.toString() + "\n" + "Score: " + score;
 	}
 }
