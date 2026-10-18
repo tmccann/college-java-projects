@@ -43,6 +43,7 @@ public class GameController {
 			//TEST un-comment to show what the controller holds
 //			System.out.println(simulator.toString()); 
 //			System.out.println(rollASix.toString());
+//			System.out.println(rollADouble.toString());
 		}
 		
 		//private method to display welcome message 
